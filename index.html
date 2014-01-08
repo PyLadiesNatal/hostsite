@@ -23,21 +23,20 @@
 		<script type="text/javascript">
 			function validaCampo()
 			{
-			if(document.cadastro.nome.value=="")
+				if(document.cadastro.nome.value=="")
 				{
-				alert("O Campo nome é obrigatório!");
-				return false;
+					alert("O Campo nome é obrigatório!");
+					return false;
 				}
-			else
+				else
 				if(document.cadastro.email.value=="")
 				{
-				alert("O Campo email é obrigatório!");
-				return false;
+					alert("O Campo email é obrigatório!");
+					return false;
 				}
-			else
-			return true;
-			}
-
+				else
+				return true;
+				} 
 			</script>
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><link rel="stylesheet" href="css/ie8.css" /><![endif]-->
 	</head>
@@ -73,7 +72,7 @@
 									<h2>Sobre</h2>
 								</header>
 								<div style="width: 400px; float: left"><p style="text-align: justify;"> 
-									Somos um grupo internacional, com foco em ajudar mais mulheres a tornarem-se participantes ativas e líderes de comunidades Python de código aberto. Nossa missão é promover, educar e impulsionar a existência de uma comunidade Python diversificada através de sensibilidação, aducação, conferências, eventos e encontros sociais.  <br>
+									Somos um grupo internacional, com foco em ajudar mais mulheres a tornarem-se participantes ativas e líderes de comunidades Python de código aberto. Nossa missão é promover, educar e impulsionar a existência de uma comunidade Python diversificada através de sensibilização, educação, conferências, eventos e encontros sociais.  <br>
 									O PyLadies também tem como objetivo fornecer uma rede de apoio amigável para as mulheres e uma ponte para o Mundo Python. Qualquer pessoa com um interesse em Python é encorajada a participar - contato que seja mulher.   
 								</p></div>	
 								<a href="http://www.pyladies.com/" class="image image-full" style="width: 300px; heigth: 200px; float: right;"><img src="images/pyladies.png" alt="PyLadies"></a> 
@@ -99,20 +98,20 @@
 										<div class="row half">
 											<div class="12u">
 												Instituição de Ensino
-												<input type="text" class="text" id="instensino" name="subject" placeholder="Subject" />
+												<input type="text" class="text" id="instensino" name="subject" placeholder="Instituição de Ensino" />
 											</div>
 										</div> 
 										 <div class="row half">
 											<div class="12u">
 										      Tem conhecimento em programação?
-										      <input name="sim" type="radio" value="sim" checked="checked" />  Sim
-										      <input name="nao" type="radio" value="nao"/> Não
+										      <input name="programa" type="radio" value="sim" checked="checked" />  Sim
+										      <input name="programa" type="radio" value="nao"/> Não
 										    </div>
 										  </div>
 										<div class="row half">
 											<div class="12u">
 												Caso tenha, cite a(s) linguagem(ns).
-												<textarea name="Cite somente as linguagens que você possue um bom conhecimento" id="linguagens" placeholder="Message"></textarea>
+												<textarea name="linguagens" id="linguagens" placeholder="Cite somente as linguagens que você possue um bom conhecimento"></textarea>
 											</div>
 										</div>
 										<div class="row">
