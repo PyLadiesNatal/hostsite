@@ -11,11 +11,10 @@
 	$linguagens = $_POST["linguagens"];
 
 	//Insert record  
-	$conn = "INSERT INTO ladiesinfo (name, email, instensino, programa, linguagens) VALUES ('$name', '$email', '$instensino' , '$programa', '$linguagens');"
+	$conn = "INSERT INTO ladiesinfo (name, email, instensino, programa, linguagens) VALUES ($name, $email, $instensino, $programa, $linguagens);"
 	$ok = sqlite_exec($db, $conn);
 	if (!$ok) die() ("Algo de errado aconteceu");
-	//$db->exec("INSERT INTO ladiesinfo (name, email, instensino, programa, linguagens) VALUES ('&name', '&email', '&instensino' , '&programa', '&linguagens');");
-
+	
 	echo "Seu cadastro foi realizado com sucesso!";
 	sqlite_close($db);
 	$db = NULL;
